@@ -23,8 +23,8 @@ namespace Proyecto_Final_Programacion_2
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
 
-        string usuario = "pancho";
-        string password = "pancho";
+        string usuario = "hola";
+        string password = "hola";
 
         public Login()
         {
@@ -46,7 +46,7 @@ namespace Proyecto_Final_Programacion_2
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)    //validamos el usuario y contraseña
         {
             if (txtUsername.Texts != usuario || txtPassword.Texts != password)
             {
@@ -69,9 +69,11 @@ namespace Proyecto_Final_Programacion_2
             {
                 txtUsername.Clear();
                 txtPassword.Clear();
+
                 this.Hide();
                 Formbienvenida bienvenida = new Formbienvenida();
                 bienvenida.ShowDialog();
+
                 this.Hide();
                 Formprincipal principal = new Formprincipal();
                 principal.ShowDialog();
