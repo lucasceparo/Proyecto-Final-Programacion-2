@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;   // libreria para poder arrastrar ventana de login 
-
+using System.IO;
 
 namespace Proyecto_Final_Programacion_2
 {
@@ -131,6 +131,14 @@ namespace Proyecto_Final_Programacion_2
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else
+                WindowState = FormWindowState.Normal;
         }
     }
 }

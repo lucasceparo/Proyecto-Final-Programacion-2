@@ -31,10 +31,11 @@
             this.Btbminimizar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.buttonRegistro = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.txtPassword = new Proyecto_Final_Programacion_2.TextBox();
             this.txtUsername = new Proyecto_Final_Programacion_2.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Mostrarpass)).BeginInit();
@@ -42,11 +43,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.Btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btbminimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(47)))), ((int)(((byte)(66)))));
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.Mostrarpass);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -57,10 +59,12 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(47)))), ((int)(((byte)(66)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(0, -1);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(250, 330);
+            this.pictureBox3.Size = new System.Drawing.Size(250, 328);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -78,6 +82,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(274, 152);
             this.pictureBox2.Name = "pictureBox2";
@@ -88,6 +93,7 @@
             // 
             // Btnlogin
             // 
+            this.Btnlogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.Btnlogin.FlatAppearance.BorderSize = 0;
             this.Btnlogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -104,10 +110,11 @@
             // 
             // Btncerrar
             // 
+            this.Btncerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btncerrar.Image")));
-            this.Btncerrar.Location = new System.Drawing.Point(765, 0);
+            this.Btncerrar.Location = new System.Drawing.Point(753, -1);
             this.Btncerrar.Name = "Btncerrar";
-            this.Btncerrar.Size = new System.Drawing.Size(15, 15);
+            this.Btncerrar.Size = new System.Drawing.Size(25, 25);
             this.Btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Btncerrar.TabIndex = 4;
             this.Btncerrar.TabStop = false;
@@ -115,10 +122,11 @@
             // 
             // Btbminimizar
             // 
+            this.Btbminimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Btbminimizar.Image = ((System.Drawing.Image)(resources.GetObject("Btbminimizar.Image")));
-            this.Btbminimizar.Location = new System.Drawing.Point(744, 0);
+            this.Btbminimizar.Location = new System.Drawing.Point(689, -1);
             this.Btbminimizar.Name = "Btbminimizar";
-            this.Btbminimizar.Size = new System.Drawing.Size(15, 15);
+            this.Btbminimizar.Size = new System.Drawing.Size(25, 25);
             this.Btbminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Btbminimizar.TabIndex = 0;
             this.Btbminimizar.TabStop = false;
@@ -126,6 +134,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
@@ -138,6 +147,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(274, 83);
             this.pictureBox1.Name = "pictureBox1";
@@ -146,8 +156,51 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(453, 253);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 15);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "¿No estás registrado?";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // buttonRegistro
+            // 
+            this.buttonRegistro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonRegistro.BackColor = System.Drawing.Color.Black;
+            this.buttonRegistro.FlatAppearance.BorderSize = 0;
+            this.buttonRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRegistro.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRegistro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.buttonRegistro.Location = new System.Drawing.Point(456, 271);
+            this.buttonRegistro.Name = "buttonRegistro";
+            this.buttonRegistro.Size = new System.Drawing.Size(124, 47);
+            this.buttonRegistro.TabIndex = 10;
+            this.buttonRegistro.Text = "REGISTRARME";
+            this.buttonRegistro.UseVisualStyleBackColor = false;
+            this.buttonRegistro.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(722, -1);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 11;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // txtPassword
             // 
+            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
             this.txtPassword.BorderColor = System.Drawing.Color.DimGray;
             this.txtPassword.BorderSize = 2;
@@ -168,6 +221,7 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.BackColor = System.Drawing.SystemColors.Window;
             this.txtUsername.BorderColor = System.Drawing.Color.DimGray;
             this.txtUsername.BorderSize = 2;
@@ -186,41 +240,14 @@
             this.txtUsername.Texts = "";
             this.txtUsername.UnderlinedStyle = true;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(453, 253);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 15);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "¿No estás registrado?";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(456, 271);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 47);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Registrarme";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 330);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.buttonRegistro);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -245,6 +272,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Btncerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btbminimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,7 +291,8 @@
         private System.Windows.Forms.PictureBox Mostrarpass;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonRegistro;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 
