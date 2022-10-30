@@ -47,5 +47,10 @@ namespace Proyecto_Final_Programacion_2
             circularProgressBar1.Maximum = 100;
             timer1.Start();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

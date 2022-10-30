@@ -23,8 +23,8 @@ namespace Proyecto_Final_Programacion_2
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
 
-        string usuario = "hola";
-        string password = "hola";
+       /* string usuario = "hola";
+        string password = "hola";*/
 
         public Login()
         {
@@ -48,27 +48,44 @@ namespace Proyecto_Final_Programacion_2
 
         private void button1_Click(object sender, EventArgs e)    //validamos el usuario y contraseña
         {
-            if (txtUsername.Texts != usuario || txtPassword.Texts != password)
+            /*   if (txtUsername.Texts != usuario || txtPassword.Texts != password)
+               {
+                   if (txtUsername.Texts != usuario)
+                   {
+                       MessageBox.Show("Usuario Incorrecto");
+                       txtUsername.Clear();
+                       txtUsername.Focus();
+                       return;
+                   }
+                   if (txtPassword.Texts != password)
+                   {
+                       MessageBox.Show("Contraseña Incorrecta");
+                       txtPassword.Clear();
+                       txtPassword.Focus();
+                       return;
+                   }
+               }
+               else
+               {
+                   txtUsername.Clear();
+                   txtPassword.Clear();
+
+                   this.Hide();
+                   Formbienvenida bienvenida = new Formbienvenida();
+                   bienvenida.ShowDialog();
+
+                   this.Hide();
+                   Formprincipal principal = new Formprincipal();
+                   principal.ShowDialog();
+
+               }*/
+
+            
+            TextReader Inicio = new StreamReader(txtUsername.Texts + ".txt");
+
+            if (Inicio.ReadLine()==txtPassword.Texts)
             {
-                if (txtUsername.Texts != usuario)
-                {
-                    MessageBox.Show("Usuario Incorrecto");
-                    txtUsername.Clear();
-                    txtUsername.Focus();
-                    return;
-                }
-                if (txtPassword.Texts != password)
-                {
-                    MessageBox.Show("Contraseña Incorrecta");
-                    txtPassword.Clear();
-                    txtPassword.Focus();
-                    return;
-                }
-            }
-            else
-            {
-                txtUsername.Clear();
-                txtPassword.Clear();
+                MessageBox.Show("Inicio correcto");
 
                 this.Hide();
                 Formbienvenida bienvenida = new Formbienvenida();
@@ -77,8 +94,8 @@ namespace Proyecto_Final_Programacion_2
                 this.Hide();
                 Formprincipal principal = new Formprincipal();
                 principal.ShowDialog();
-
             }
+           
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -125,7 +142,10 @@ namespace Proyecto_Final_Programacion_2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Registro ventana = new Registro();
+            ventana.ShowDialog();
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -139,6 +159,31 @@ namespace Proyecto_Final_Programacion_2
                 WindowState = FormWindowState.Maximized;
             else
                 WindowState = FormWindowState.Normal;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsername_TextChanged2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
