@@ -23,18 +23,21 @@ namespace Proyecto_Final_Programacion_2
         private Form currentChildForm;
 
         //constructor 
-        public Formprincipal()
+        public Formprincipal(bool admin)
         {
+
             InitializeComponent();
             leftBorderBtn = new Panel();  //inicializamos el panel borde izquierdo del boton
-            leftBorderBtn.Size = new Size(10,60);
+            leftBorderBtn.Size = new Size(10, 60);
             PanelMenu.Controls.Add(leftBorderBtn);
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            HistorialPc.Enabled = admin;
         }
         //estructura para almacenar color rgb
 
         private struct RGBColors
         {
+
             public static Color color1 = Color.FromArgb(172, 126, 241);
             public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(253, 138, 114);
@@ -46,7 +49,7 @@ namespace Proyecto_Final_Programacion_2
         //metodos
         private void ActivateButton(object senderBtn, Color color) //resaltamos el boton activo
         {
-            if(senderBtn != null)
+            if (senderBtn != null)
             {
                 DisableButton();
                 //boton
@@ -63,7 +66,7 @@ namespace Proyecto_Final_Programacion_2
                 leftBorderBtn.Location = new Point(0, btnActual.Location.Y);  //asignamos nueva ubicacion 
                 leftBorderBtn.Visible = true;  //visibilidad en verdadero
                 leftBorderBtn.BringToFront();  //llevamos al frente
-                
+
                 icono_form_principal.IconChar = btnActual.IconChar;  //indico que el formulario principal sea igual al formulario hijo
                 icono_form_principal.IconColor = color;  //cambiamos el color del iconoa parametro color
             }
@@ -75,10 +78,10 @@ namespace Proyecto_Final_Programacion_2
             if (btnActual != null)
             {
                 btnActual.BackColor = Color.FromArgb(31, 30, 68);
-                btnActual.ForeColor = Color.Gainsboro; 
-                btnActual.TextAlign = ContentAlignment.MiddleLeft; 
-                btnActual.IconColor = Color.Gainsboro; 
-                btnActual.TextImageRelation = TextImageRelation.ImageBeforeText;   
+                btnActual.ForeColor = Color.Gainsboro;
+                btnActual.TextAlign = ContentAlignment.MiddleLeft;
+                btnActual.IconColor = Color.Gainsboro;
+                btnActual.TextImageRelation = TextImageRelation.ImageBeforeText;
                 btnActual.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
@@ -99,7 +102,7 @@ namespace Proyecto_Final_Programacion_2
             childForm.BringToFront();    //traigo el formulario hacia el frente y lo muestra
             childForm.Show();
             titulo_de_form_hijo.Text = childForm.Text;    //muestra los datos del formulario en la etiquita titulo
-        } 
+        }
 
         private void Computadoras_Click(object sender, EventArgs e)
         {
@@ -179,25 +182,10 @@ namespace Proyecto_Final_Programacion_2
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            if(WindowState == FormWindowState.Normal)
+            if (WindowState == FormWindowState.Normal)
                 WindowState = FormWindowState.Maximized;
             else
                 WindowState = FormWindowState.Normal;
-        }
-
-        private void Barra_de_titulo_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Panel_de_escritorio_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

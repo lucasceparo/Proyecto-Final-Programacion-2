@@ -189,7 +189,6 @@
             this.Barra_de_titulo.Name = "Barra_de_titulo";
             this.Barra_de_titulo.Size = new System.Drawing.Size(573, 75);
             this.Barra_de_titulo.TabIndex = 1;
-            this.Barra_de_titulo.Paint += new System.Windows.Forms.PaintEventHandler(this.Barra_de_titulo_Paint);
             this.Barra_de_titulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Barra_de_titulo_MouseDown);
             // 
             // pictureBox2
@@ -262,7 +261,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(573, 9);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // iconLogout
             // 

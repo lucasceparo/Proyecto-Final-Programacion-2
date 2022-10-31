@@ -23,104 +23,69 @@ namespace Proyecto_Final_Programacion_2
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
 
-       /* string usuario = "hola";
-        string password = "hola";*/
+        string usuario;
+        string password;
+        bool admin = false;
 
         public Login()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged2(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)    //validamos el usuario y contraseña
         {
-            /*   if (txtUsername.Texts != usuario || txtPassword.Texts != password)
-               {
-                   if (txtUsername.Texts != usuario)
-                   {
-                       MessageBox.Show("Usuario Incorrecto");
-                       txtUsername.Clear();
-                       txtUsername.Focus();
-                       return;
-                   }
-                   if (txtPassword.Texts != password)
-                   {
-                       MessageBox.Show("Contraseña Incorrecta");
-                       txtPassword.Clear();
-                       txtPassword.Focus();
-                       return;
-                   }
-               }
-               else
-               {
-                   txtUsername.Clear();
-                   txtPassword.Clear();
-
-                   this.Hide();
-                   Formbienvenida bienvenida = new Formbienvenida();
-                   bienvenida.ShowDialog();
-
-                   this.Hide();
-                   Formprincipal principal = new Formprincipal();
-                   principal.ShowDialog();
-
-               }*/
-
-            
-            TextReader Inicio = new StreamReader(txtUsername.Texts + ".txt");
-
-            if (Inicio.ReadLine()==txtPassword.Texts)
+            try
             {
-                MessageBox.Show("Inicio correcto");
+                usuario = txtUsername.Texts;
+                password = txtPassword.Texts;
 
-                this.Hide();
-                Formbienvenida bienvenida = new Formbienvenida();
-                bienvenida.ShowDialog();
+                StreamReader leer;
+                leer = File.OpenText("usuarios.txt");
+                string cadena;
+                string[] arreglo = new string[2];
+                char[] separador = { '-' };
+                bool autorizado = false;
+                cadena = leer.ReadLine();
+                while (cadena != null && autorizado == false)
+                {
+                    arreglo = cadena.Split(separador);
+                    if (arreglo[0].Trim().Equals(usuario) && arreglo[1].Trim().Equals(password))
+                    {
+                        if (txtUsername.Texts == "admin" || txtPassword.Texts == "admin")
+                            admin = true;
+                        txtUsername.Clear();
+                        txtPassword.Clear();
+                        autorizado = true;
 
-                this.Hide();
-                Formprincipal principal = new Formprincipal();
-                principal.ShowDialog();
+
+                        this.Hide();
+                        Formbienvenida bienvenida = new Formbienvenida();
+                        bienvenida.ShowDialog();
+
+                        this.Hide();
+                        Formprincipal principal = new Formprincipal(admin);
+                        principal.ShowDialog();
+                    }
+                    else
+                    {
+                        cadena = leer.ReadLine();
+                    }
+
+                }
+                if (autorizado == false)
+                {
+                    MessageBox.Show("Usuario y/o contraseña incorrectos");
+                }
             }
-           
+            catch (Exception error)
+            {
+                MessageBox.Show("Erorr: " + error);
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void txtUsername_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtUsername_Leave(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPassword_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Btbminimizar_Click(object sender, EventArgs e)
@@ -145,11 +110,6 @@ namespace Proyecto_Final_Programacion_2
             this.Hide();
             Registro ventana = new Registro();
             ventana.ShowDialog();
-            
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -159,31 +119,6 @@ namespace Proyecto_Final_Programacion_2
                 WindowState = FormWindowState.Maximized;
             else
                 WindowState = FormWindowState.Normal;
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtUsername_TextChanged2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPassword_TextChanged2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

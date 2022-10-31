@@ -50,7 +50,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Btnlogin
             // 
@@ -104,7 +103,6 @@
             this.label1.Size = new System.Drawing.Size(100, 33);
             this.label1.TabIndex = 5;
             this.label1.Text = "LOGIN";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -116,7 +114,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // label2
             // 
@@ -130,7 +127,6 @@
             this.label2.Size = new System.Drawing.Size(127, 15);
             this.label2.TabIndex = 9;
             this.label2.Text = "¿No estás registrado?";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btRegistro
             // 
@@ -179,7 +175,6 @@
             this.txtPassword.TabIndex = 7;
             this.txtPassword.Texts = "";
             this.txtPassword.UnderlinedStyle = true;
-            this.txtPassword.TextChanged2 += new System.EventHandler(this.txtPassword_TextChanged2);
             // 
             // txtUsername
             // 
@@ -201,7 +196,6 @@
             this.txtUsername.TabIndex = 6;
             this.txtUsername.Texts = "";
             this.txtUsername.UnderlinedStyle = true;
-            this.txtUsername.TextChanged2 += new System.EventHandler(this.txtUsername_TextChanged2);
             // 
             // Login
             // 
@@ -222,9 +216,9 @@
             this.Controls.Add(this.Btnlogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "q";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btncerrar)).EndInit();

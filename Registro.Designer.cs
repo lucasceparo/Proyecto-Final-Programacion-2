@@ -34,11 +34,11 @@
             this.Btncerrar = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtPasswordReg = new Proyecto_Final_Programacion_2.TextBox();
-            this.txtUsernameReg = new Proyecto_Final_Programacion_2.TextBox();
             this.BtRegistrar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtPasswordReg = new Proyecto_Final_Programacion_2.TextBox();
+            this.txtUsernameReg = new Proyecto_Final_Programacion_2.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btbminimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btncerrar)).BeginInit();
@@ -56,6 +56,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // Btbminimizar
             // 
@@ -67,6 +68,7 @@
             this.Btbminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Btbminimizar.TabIndex = 12;
             this.Btbminimizar.TabStop = false;
+            this.Btbminimizar.Click += new System.EventHandler(this.Btbminimizar_Click);
             // 
             // Btncerrar
             // 
@@ -78,6 +80,7 @@
             this.Btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Btncerrar.TabIndex = 13;
             this.Btncerrar.TabStop = false;
+            this.Btncerrar.Click += new System.EventHandler(this.Btncerrar_Click);
             // 
             // pictureBox2
             // 
@@ -100,48 +103,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
-            // 
-            // txtPasswordReg
-            // 
-            this.txtPasswordReg.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPasswordReg.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPasswordReg.BorderColor = System.Drawing.Color.DimGray;
-            this.txtPasswordReg.BorderSize = 2;
-            this.txtPasswordReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasswordReg.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPasswordReg.Location = new System.Drawing.Point(187, 158);
-            this.txtPasswordReg.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPasswordReg.Multiline = false;
-            this.txtPasswordReg.Name = "txtPasswordReg";
-            this.txtPasswordReg.Padding = new System.Windows.Forms.Padding(7);
-            this.txtPasswordReg.PasswordChar = true;
-            this.txtPasswordReg.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtPasswordReg.PlaceholderText = "Password";
-            this.txtPasswordReg.Size = new System.Drawing.Size(400, 31);
-            this.txtPasswordReg.TabIndex = 17;
-            this.txtPasswordReg.Texts = "";
-            this.txtPasswordReg.UnderlinedStyle = true;
-            // 
-            // txtUsernameReg
-            // 
-            this.txtUsernameReg.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUsernameReg.BackColor = System.Drawing.SystemColors.Window;
-            this.txtUsernameReg.BorderColor = System.Drawing.Color.DimGray;
-            this.txtUsernameReg.BorderSize = 2;
-            this.txtUsernameReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsernameReg.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsernameReg.Location = new System.Drawing.Point(187, 89);
-            this.txtUsernameReg.Margin = new System.Windows.Forms.Padding(4);
-            this.txtUsernameReg.Multiline = false;
-            this.txtUsernameReg.Name = "txtUsernameReg";
-            this.txtUsernameReg.Padding = new System.Windows.Forms.Padding(7);
-            this.txtUsernameReg.PasswordChar = false;
-            this.txtUsernameReg.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtUsernameReg.PlaceholderText = "Username";
-            this.txtUsernameReg.Size = new System.Drawing.Size(400, 31);
-            this.txtUsernameReg.TabIndex = 16;
-            this.txtUsernameReg.Texts = "";
-            this.txtUsernameReg.UnderlinedStyle = true;
             // 
             // BtRegistrar
             // 
@@ -188,6 +149,48 @@
             this.label1.Size = new System.Drawing.Size(118, 33);
             this.label1.TabIndex = 21;
             this.label1.Text = "SING UP";
+            // 
+            // txtPasswordReg
+            // 
+            this.txtPasswordReg.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPasswordReg.BackColor = System.Drawing.SystemColors.Window;
+            this.txtPasswordReg.BorderColor = System.Drawing.Color.DimGray;
+            this.txtPasswordReg.BorderSize = 2;
+            this.txtPasswordReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasswordReg.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPasswordReg.Location = new System.Drawing.Point(187, 158);
+            this.txtPasswordReg.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPasswordReg.Multiline = false;
+            this.txtPasswordReg.Name = "txtPasswordReg";
+            this.txtPasswordReg.Padding = new System.Windows.Forms.Padding(7);
+            this.txtPasswordReg.PasswordChar = true;
+            this.txtPasswordReg.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPasswordReg.PlaceholderText = "Password";
+            this.txtPasswordReg.Size = new System.Drawing.Size(400, 31);
+            this.txtPasswordReg.TabIndex = 17;
+            this.txtPasswordReg.Texts = "";
+            this.txtPasswordReg.UnderlinedStyle = true;
+            // 
+            // txtUsernameReg
+            // 
+            this.txtUsernameReg.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUsernameReg.BackColor = System.Drawing.SystemColors.Window;
+            this.txtUsernameReg.BorderColor = System.Drawing.Color.DimGray;
+            this.txtUsernameReg.BorderSize = 2;
+            this.txtUsernameReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsernameReg.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUsernameReg.Location = new System.Drawing.Point(187, 89);
+            this.txtUsernameReg.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsernameReg.Multiline = false;
+            this.txtUsernameReg.Name = "txtUsernameReg";
+            this.txtUsernameReg.Padding = new System.Windows.Forms.Padding(7);
+            this.txtUsernameReg.PasswordChar = false;
+            this.txtUsernameReg.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtUsernameReg.PlaceholderText = "Username";
+            this.txtUsernameReg.Size = new System.Drawing.Size(400, 31);
+            this.txtUsernameReg.TabIndex = 16;
+            this.txtUsernameReg.Texts = "";
+            this.txtUsernameReg.UnderlinedStyle = true;
             // 
             // Registro
             // 
