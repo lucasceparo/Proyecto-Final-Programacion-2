@@ -57,7 +57,6 @@ namespace Proyecto_Final_Programacion_2
                         txtPassword.Clear();
                         autorizado = true;
 
-
                         this.Hide();
                         Formbienvenida bienvenida = new Formbienvenida();
                         bienvenida.ShowDialog();
@@ -70,7 +69,6 @@ namespace Proyecto_Final_Programacion_2
                     {
                         cadena = leer.ReadLine();
                     }
-
                 }
                 if (autorizado == false)
                 {
@@ -110,7 +108,6 @@ namespace Proyecto_Final_Programacion_2
             this.Hide();
             Registro ventana = new Registro();
             ventana.ShowDialog();
-
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
