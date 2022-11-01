@@ -32,6 +32,8 @@ namespace Proyecto_Final_Programacion_2
             PanelMenu.Controls.Add(leftBorderBtn);
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             HistorialPc.Enabled = admin;
+            BtnConfiguracion.Enabled = admin;
+            
         }
         //estructura para almacenar color rgb
 
