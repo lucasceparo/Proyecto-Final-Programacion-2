@@ -80,11 +80,11 @@ namespace Proyecto_Final_Programacion_2
             if (btnActual != null)
             {
                 btnActual.BackColor = Color.FromArgb(31, 30, 68);
-                btnActual.ForeColor = Color.Gainsboro;
-                btnActual.TextAlign = ContentAlignment.MiddleLeft;
-                btnActual.IconColor = Color.Gainsboro;
+                btnActual.ForeColor = Color.Gainsboro;//OBTIENE EL COLOR DE ARRIBA
+                btnActual.TextAlign = ContentAlignment.MiddleLeft;//ALINEA EL TEXTO
+                btnActual.IconColor = Color.Gainsboro;//EL ICONO OBTIENE EL COLOR 
                 btnActual.TextImageRelation = TextImageRelation.ImageBeforeText;
-                btnActual.ImageAlign = ContentAlignment.MiddleLeft;
+                btnActual.ImageAlign = ContentAlignment.MiddleLeft;//ALINEA LA IMAGEN
             }
         }
 
@@ -115,7 +115,6 @@ namespace Proyecto_Final_Programacion_2
         private void Home_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            Reset();
             OpenChilForm(new Home());
         }
 

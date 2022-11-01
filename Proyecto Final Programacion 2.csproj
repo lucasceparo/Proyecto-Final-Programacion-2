@@ -66,10 +66,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Computadoras.cs">
+    <Compile Include="forms\Computadoras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Computadoras.Designer.cs">
+    <Compile Include="forms\Computadoras.Designer.cs">
       <DependentUpon>Computadoras.cs</DependentUpon>
     </Compile>
     <Compile Include="Formprincipal.cs">
@@ -77,12 +77,6 @@
     </Compile>
     <Compile Include="Formprincipal.Designer.cs">
       <DependentUpon>Formprincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="forms\Computadoras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\Computadoras.Designer.cs">
-      <DependentUpon>Computadoras.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Historial.cs">
       <SubType>Form</SubType>
@@ -128,14 +122,11 @@
     <Compile Include="TextBox.Designer.cs">
       <DependentUpon>TextBox.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Computadoras.resx">
+    <EmbeddedResource Include="forms\Computadoras.resx">
       <DependentUpon>Computadoras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formprincipal.resx">
       <DependentUpon>Formprincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\Computadoras.resx">
-      <DependentUpon>Computadoras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Historial.resx">
       <DependentUpon>Historial.cs</DependentUpon>
