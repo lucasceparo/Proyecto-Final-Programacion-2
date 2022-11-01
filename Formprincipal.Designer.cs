@@ -21,6 +21,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formprincipal));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.PanelMenu = new System.Windows.Forms.Panel();
+            this.iconLogout = new FontAwesome.Sharp.IconButton();
             this.BtnConfiguracion = new FontAwesome.Sharp.IconButton();
             this.HistorialPc = new FontAwesome.Sharp.IconButton();
             this.Computadoras = new FontAwesome.Sharp.IconButton();
@@ -35,8 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.icono_form_principal = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.iconLogout = new FontAwesome.Sharp.IconButton();
-            this.Panel_de_escritorio = new System.Windows.Forms.Panel();
+            this.PanelChildForm = new System.Windows.Forms.Panel();
             this.PanelMenu.SuspendLayout();
             this.PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Btnhome)).BeginInit();
@@ -63,6 +63,28 @@
             this.PanelMenu.Size = new System.Drawing.Size(200, 465);
             this.PanelMenu.TabIndex = 0;
             // 
+            // iconLogout
+            // 
+            this.iconLogout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconLogout.FlatAppearance.BorderSize = 0;
+            this.iconLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconLogout.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconLogout.IconChar = FontAwesome.Sharp.IconChar.RightFromBracket;
+            this.iconLogout.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconLogout.Location = new System.Drawing.Point(0, 380);
+            this.iconLogout.Name = "iconLogout";
+            this.iconLogout.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconLogout.Size = new System.Drawing.Size(200, 60);
+            this.iconLogout.TabIndex = 5;
+            this.iconLogout.Text = "Cerrar Sesion";
+            this.iconLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconLogout.UseVisualStyleBackColor = true;
+            this.iconLogout.Click += new System.EventHandler(this.iconLogout_Click);
+            // 
             // BtnConfiguracion
             // 
             this.BtnConfiguracion.Dock = System.Windows.Forms.DockStyle.Top;
@@ -79,7 +101,7 @@
             this.BtnConfiguracion.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.BtnConfiguracion.Size = new System.Drawing.Size(200, 60);
             this.BtnConfiguracion.TabIndex = 4;
-            this.BtnConfiguracion.Text = "Setting ";
+            this.BtnConfiguracion.Text = "Opciones";
             this.BtnConfiguracion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnConfiguracion.UseVisualStyleBackColor = true;
@@ -162,14 +184,14 @@
             // 
             // Btnhome
             // 
-            this.Btnhome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Btnhome.Image = ((System.Drawing.Image)(resources.GetObject("Btnhome.Image")));
             this.Btnhome.Location = new System.Drawing.Point(0, 0);
             this.Btnhome.Name = "Btnhome";
-            this.Btnhome.Size = new System.Drawing.Size(200, 140);
+            this.Btnhome.Size = new System.Drawing.Size(200, 84);
             this.Btnhome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Btnhome.TabIndex = 0;
             this.Btnhome.TabStop = false;
+            this.Btnhome.Click += new System.EventHandler(this.Btnhome_Click);
             this.Btnhome.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Btnhome_MouseDown);
             // 
             // errorProvider1
@@ -262,43 +284,21 @@
             this.panel1.Size = new System.Drawing.Size(573, 9);
             this.panel1.TabIndex = 2;
             // 
-            // iconLogout
+            // PanelChildForm
             // 
-            this.iconLogout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconLogout.FlatAppearance.BorderSize = 0;
-            this.iconLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconLogout.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconLogout.IconChar = FontAwesome.Sharp.IconChar.RightFromBracket;
-            this.iconLogout.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconLogout.Location = new System.Drawing.Point(0, 380);
-            this.iconLogout.Name = "iconLogout";
-            this.iconLogout.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconLogout.Size = new System.Drawing.Size(200, 60);
-            this.iconLogout.TabIndex = 5;
-            this.iconLogout.Text = "Log out";
-            this.iconLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconLogout.UseVisualStyleBackColor = true;
-            this.iconLogout.Click += new System.EventHandler(this.iconLogout_Click);
-            // 
-            // Panel_de_escritorio
-            // 
-            this.Panel_de_escritorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.Panel_de_escritorio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_de_escritorio.Location = new System.Drawing.Point(200, 84);
-            this.Panel_de_escritorio.Name = "Panel_de_escritorio";
-            this.Panel_de_escritorio.Size = new System.Drawing.Size(573, 381);
-            this.Panel_de_escritorio.TabIndex = 3;
+            this.PanelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.PanelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelChildForm.Location = new System.Drawing.Point(200, 84);
+            this.PanelChildForm.Name = "PanelChildForm";
+            this.PanelChildForm.Size = new System.Drawing.Size(573, 381);
+            this.PanelChildForm.TabIndex = 3;
             // 
             // Formprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(773, 465);
-            this.Controls.Add(this.Panel_de_escritorio);
+            this.Controls.Add(this.PanelChildForm);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Barra_de_titulo);
             this.Controls.Add(this.PanelMenu);
@@ -339,6 +339,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private FontAwesome.Sharp.IconButton iconLogout;
-        private System.Windows.Forms.Panel Panel_de_escritorio;
+        private System.Windows.Forms.Panel PanelChildForm;
     }
 }

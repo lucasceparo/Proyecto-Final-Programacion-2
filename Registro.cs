@@ -29,6 +29,10 @@ namespace Proyecto_Final_Programacion_2
         private void Btnlogin_Click(object sender, EventArgs e)
         {
             CuentasRepetidas();
+            this.Hide();
+            Login volver = new Login();
+            volver.ShowDialog();
+
         }
 
         public void CuentasRepetidas()

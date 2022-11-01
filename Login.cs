@@ -52,6 +52,7 @@ namespace Proyecto_Final_Programacion_2
                     if (arreglo[0].Trim().Equals(usuario) && arreglo[1].Trim().Equals(password))
                     {
                         if (txtUsername.Texts == "admin" || txtPassword.Texts == "admin")
+
                             admin = true;
                         txtUsername.Clear();
                         txtPassword.Clear();
@@ -65,6 +66,7 @@ namespace Proyecto_Final_Programacion_2
                         this.Hide();
                         Formprincipal principal = new Formprincipal(admin);
                         principal.ShowDialog();
+                        
                     }
                     else
                     {
