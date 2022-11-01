@@ -97,8 +97,8 @@ namespace Proyecto_Final_Programacion_2
             childForm.TopLevel = false;     //indico que el formulario hijo no es de nivel superior
             childForm.FormBorderStyle = FormBorderStyle.None;     //quita el borde del formulario
             childForm.Dock = DockStyle.Fill;     //llena el contenedor con la propiedad dock
-            PanelChildForm.Controls.Add(childForm);  //agrego el formulario hijo a los controles del panel escritorio 
-            PanelChildForm.Tag = childForm;    //asocio los datos del formulario al panel
+            Panel_de_escritorio.Controls.Add(childForm);  //agrego el formulario hijo a los controles del panel escritorio 
+            Panel_de_escritorio.Tag = childForm;    //asocio los datos del formulario al panel
             childForm.BringToFront();    //traigo el formulario hacia el frente y lo muestra
             childForm.Show();
             titulo_de_form_hijo.Text = childForm.Text;    //muestra los datos del formulario en la etiquita titulo
@@ -187,12 +187,5 @@ namespace Proyecto_Final_Programacion_2
             else
                 WindowState = FormWindowState.Normal;
         }
-
-        private void Btnhome_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }
