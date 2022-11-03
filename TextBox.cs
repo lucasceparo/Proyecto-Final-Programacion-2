@@ -191,8 +191,6 @@ namespace Proyecto_Final_Programacion_2
             }
 
         }
-
-
         //anulamos estos metodos
 
         protected override void OnPaint(PaintEventArgs e)
@@ -209,7 +207,6 @@ namespace Proyecto_Final_Programacion_2
                         graph.DrawLine(penBorder, 0, this.Height - 1, this.Width, this.Height - 1);
                 else //dibujamos el borde del estilo normal
                         graph.DrawRectangle(penBorder, 0, 0, this.Width - 0.5f, this.Height - 0.5f);
-           
             }
             
         }

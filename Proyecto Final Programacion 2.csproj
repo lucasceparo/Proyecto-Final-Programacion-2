@@ -66,6 +66,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassBottonFormPrincipal.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="forms\Computadoras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,11 +87,11 @@
     <Compile Include="forms\Historial.Designer.cs">
       <DependentUpon>Historial.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\Home.cs">
+    <Compile Include="forms\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="forms\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Setting.cs">
       <SubType>Form</SubType>
@@ -131,8 +134,8 @@
     <EmbeddedResource Include="forms\Historial.resx">
       <DependentUpon>Historial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="forms\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Setting.resx">
       <DependentUpon>Setting.cs</DependentUpon>

@@ -25,7 +25,6 @@ namespace Proyecto_Final_Programacion_2
         //constructor 
         public Formprincipal(bool admin)
         {
-
             InitializeComponent();
             leftBorderBtn = new Panel();  //inicializamos el panel borde izquierdo del boton
             leftBorderBtn.Size = new Size(10, 60);
@@ -39,7 +38,6 @@ namespace Proyecto_Final_Programacion_2
 
         private struct RGBColors
         {
-
             public static Color color1 = Color.FromArgb(172, 126, 241);
             public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(253, 138, 114);
@@ -114,8 +112,10 @@ namespace Proyecto_Final_Programacion_2
 
         private void Home_Click(object sender, EventArgs e)
         {
+           
             ActivateButton(sender, RGBColors.color1);
-            OpenChilForm(new Home());
+            Reset();
+            OpenChilForm(new Inicio());
         }
 
         private void HistorialPc_Click(object sender, EventArgs e)

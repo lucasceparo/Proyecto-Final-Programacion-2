@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final_Programacion_2.forms
 {
-    public partial class Home : Form
+    public partial class Inicio : Form
     {
-        public Home()
+        public Inicio()
         {
             InitializeComponent();
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
