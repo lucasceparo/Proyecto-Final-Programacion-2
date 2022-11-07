@@ -16,5 +16,18 @@ namespace Proyecto_Final_Programacion_2.forms
         {
             InitializeComponent();
         }
+
+        private void Historial_Load(object sender, EventArgs e)
+        {
+           
+           
+           //// ListViewItem fila = new ListViewItem();
+           // fila.SubItems.Add(Computadoras.Alumno);
+          //  fila.SubItems.Add(Computadoras.Curso);
+
+          //  listaHistrialPc.Items.Add(fila);
+
+    
+        }
     }
 }

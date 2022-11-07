@@ -33,8 +33,12 @@
             this.classBottonFormPrincipal4 = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
             this.classBottonFormPrincipal3 = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
             this.classBottonFormPrincipal2 = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
-            this.classBottonFormPrincipal1 = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
+            this.Btnusarpc = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
             this.listapc = new System.Windows.Forms.CheckedListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelFecha = new System.Windows.Forms.Label();
+            this.txtCurso = new Proyecto_Final_Programacion_2.TextBox();
+            this.txtAlumo = new Proyecto_Final_Programacion_2.TextBox();
             this.PanelOps.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +49,7 @@
             this.PanelOps.Controls.Add(this.classBottonFormPrincipal4);
             this.PanelOps.Controls.Add(this.classBottonFormPrincipal3);
             this.PanelOps.Controls.Add(this.classBottonFormPrincipal2);
-            this.PanelOps.Controls.Add(this.classBottonFormPrincipal1);
+            this.PanelOps.Controls.Add(this.Btnusarpc);
             this.PanelOps.Location = new System.Drawing.Point(348, 3);
             this.PanelOps.Name = "PanelOps";
             this.PanelOps.Size = new System.Drawing.Size(213, 364);
@@ -123,24 +127,24 @@
             this.classBottonFormPrincipal2.TextColor = System.Drawing.Color.White;
             this.classBottonFormPrincipal2.UseVisualStyleBackColor = false;
             // 
-            // classBottonFormPrincipal1
+            // Btnusarpc
             // 
-            this.classBottonFormPrincipal1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.classBottonFormPrincipal1.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.classBottonFormPrincipal1.BorderColor = System.Drawing.Color.Magenta;
-            this.classBottonFormPrincipal1.BorderRadius = 40;
-            this.classBottonFormPrincipal1.BorderSize = 2;
-            this.classBottonFormPrincipal1.FlatAppearance.BorderSize = 0;
-            this.classBottonFormPrincipal1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.classBottonFormPrincipal1.ForeColor = System.Drawing.Color.White;
-            this.classBottonFormPrincipal1.Location = new System.Drawing.Point(28, 18);
-            this.classBottonFormPrincipal1.Name = "classBottonFormPrincipal1";
-            this.classBottonFormPrincipal1.Size = new System.Drawing.Size(150, 40);
-            this.classBottonFormPrincipal1.TabIndex = 0;
-            this.classBottonFormPrincipal1.Text = "USAR PC";
-            this.classBottonFormPrincipal1.TextColor = System.Drawing.Color.White;
-            this.classBottonFormPrincipal1.UseVisualStyleBackColor = false;
-            this.classBottonFormPrincipal1.Click += new System.EventHandler(this.classBottonFormPrincipal1_Click_1);
+            this.Btnusarpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.Btnusarpc.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.Btnusarpc.BorderColor = System.Drawing.Color.Magenta;
+            this.Btnusarpc.BorderRadius = 40;
+            this.Btnusarpc.BorderSize = 2;
+            this.Btnusarpc.FlatAppearance.BorderSize = 0;
+            this.Btnusarpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btnusarpc.ForeColor = System.Drawing.Color.White;
+            this.Btnusarpc.Location = new System.Drawing.Point(28, 18);
+            this.Btnusarpc.Name = "Btnusarpc";
+            this.Btnusarpc.Size = new System.Drawing.Size(150, 40);
+            this.Btnusarpc.TabIndex = 0;
+            this.Btnusarpc.Text = "USAR PC";
+            this.Btnusarpc.TextColor = System.Drawing.Color.White;
+            this.Btnusarpc.UseVisualStyleBackColor = false;
+            this.Btnusarpc.Click += new System.EventHandler(this.classBottonFormPrincipal1_Click_1);
             // 
             // listapc
             // 
@@ -210,10 +214,75 @@
             "PC N°58",
             "PC N°59",
             "PC N°60"});
-            this.listapc.Location = new System.Drawing.Point(4, 21);
+            this.listapc.Location = new System.Drawing.Point(22, 92);
             this.listapc.Name = "listapc";
-            this.listapc.Size = new System.Drawing.Size(338, 328);
+            this.listapc.Size = new System.Drawing.Size(309, 256);
             this.listapc.TabIndex = 63;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(43, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 16);
+            this.label1.TabIndex = 66;
+            this.label1.Text = "Fecha actual:";
+            // 
+            // labelFecha
+            // 
+            this.labelFecha.AutoSize = true;
+            this.labelFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFecha.ForeColor = System.Drawing.Color.Transparent;
+            this.labelFecha.Location = new System.Drawing.Point(201, 9);
+            this.labelFecha.Name = "labelFecha";
+            this.labelFecha.Size = new System.Drawing.Size(75, 16);
+            this.labelFecha.TabIndex = 67;
+            this.labelFecha.Text = "labelFecha";
+            this.labelFecha.Click += new System.EventHandler(this.labelFecha_Click);
+            // 
+            // txtCurso
+            // 
+            this.txtCurso.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCurso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txtCurso.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(50)))), ((int)(((byte)(125)))));
+            this.txtCurso.BorderSize = 2;
+            this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurso.ForeColor = System.Drawing.Color.Transparent;
+            this.txtCurso.Location = new System.Drawing.Point(177, 45);
+            this.txtCurso.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCurso.Multiline = false;
+            this.txtCurso.Name = "txtCurso";
+            this.txtCurso.Padding = new System.Windows.Forms.Padding(7);
+            this.txtCurso.PasswordChar = false;
+            this.txtCurso.PlaceholderColor = System.Drawing.Color.Transparent;
+            this.txtCurso.PlaceholderText = "Curso";
+            this.txtCurso.Size = new System.Drawing.Size(147, 31);
+            this.txtCurso.TabIndex = 65;
+            this.txtCurso.Texts = "";
+            this.txtCurso.UnderlinedStyle = true;
+            // 
+            // txtAlumo
+            // 
+            this.txtAlumo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtAlumo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txtAlumo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(50)))), ((int)(((byte)(125)))));
+            this.txtAlumo.BorderSize = 2;
+            this.txtAlumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlumo.ForeColor = System.Drawing.Color.Transparent;
+            this.txtAlumo.Location = new System.Drawing.Point(22, 45);
+            this.txtAlumo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAlumo.Multiline = false;
+            this.txtAlumo.Name = "txtAlumo";
+            this.txtAlumo.Padding = new System.Windows.Forms.Padding(7);
+            this.txtAlumo.PasswordChar = false;
+            this.txtAlumo.PlaceholderColor = System.Drawing.Color.Transparent;
+            this.txtAlumo.PlaceholderText = "Alumno";
+            this.txtAlumo.Size = new System.Drawing.Size(147, 31);
+            this.txtAlumo.TabIndex = 64;
+            this.txtAlumo.Texts = "";
+            this.txtAlumo.UnderlinedStyle = true;
             // 
             // Computadoras
             // 
@@ -221,13 +290,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(573, 369);
+            this.Controls.Add(this.labelFecha);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCurso);
+            this.Controls.Add(this.txtAlumo);
             this.Controls.Add(this.listapc);
             this.Controls.Add(this.PanelOps);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Computadoras";
             this.Text = "Computadoras";
+            this.Load += new System.EventHandler(this.Computadoras_Load);
             this.PanelOps.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -236,8 +311,12 @@
         private ClassBottonFormPrincipal classBottonFormPrincipal4;
         private ClassBottonFormPrincipal classBottonFormPrincipal3;
         private ClassBottonFormPrincipal classBottonFormPrincipal2;
-        private ClassBottonFormPrincipal classBottonFormPrincipal1;
+        private ClassBottonFormPrincipal Btnusarpc;
         private ClassBottonFormPrincipal classBottonFormPrincipal5;
         private System.Windows.Forms.CheckedListBox listapc;
+        private TextBox txtAlumo;
+        private TextBox txtCurso;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelFecha;
     }
 }
