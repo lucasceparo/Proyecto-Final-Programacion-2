@@ -16,7 +16,8 @@ namespace Proyecto_Final_Programacion_2
 {
     public partial class Computadoras : Form
     {
-        internal static string Alumno, Curso;
+        Historial historial;
+        string pcsselect;
 
         public Computadoras()
         {
@@ -30,36 +31,7 @@ namespace Proyecto_Final_Programacion_2
 
         private void classBottonFormPrincipal1_Click_1(object sender, EventArgs e)
         {
-            if (txtAlumo.Texts == "")
-                MessageBox.Show("Debe ingresar un alumno");
-            else if (txtCurso.Texts == "")
-                MessageBox.Show("Debe ingresar un curso");
-            else
-            {
-                Alumno = txtAlumo.Texts;
-                Curso = txtCurso.Texts;
-
-                GrabarDatos();
-
-              //  ListViewItem fila = new ListViewItem();
-               // fila.SubItems.Add(Computadoras.Alumno);
-               // fila.SubItems.Add(Computadoras.Curso);
-                //listaHistrialPc.Items.Add(fila);
-
-                txtAlumo.Texts = "";
-                txtCurso.Texts = "";
-
-            }
-        }
-
-        private void GrabarDatos()
-        {
-            StreamWriter archivo = new StreamWriter("historial.txt", true);
-            archivo.WriteLine(txtAlumo.Texts);
-            archivo.WriteLine(txtCurso.Texts);
-            archivo.Close();
-
-
+            historial.GrabarDatos(pcsselect,txtAlumno.Texts, txtCurso.Texts, labelFecha.Text);
         }
 
         private void labelFecha_Click(object sender, EventArgs e)
@@ -67,11 +39,20 @@ namespace Proyecto_Final_Programacion_2
 
         }
 
+        private void listapc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pcsselect = listapc.Items[listapc.SelectedIndex].ToString();
+        }
+
+        private void txtAlumno_TextChanged2(object sender, EventArgs e)
+        {
+
+        }
+
         private void Computadoras_Load(object sender, EventArgs e)
         {
             labelFecha.Text = DateTime.Today.Date.ToString("d");
-            Historial historial = new Historial();
+            historial = new Historial();
         }
-
     }
 }

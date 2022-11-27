@@ -28,88 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listaHistrialPc = new System.Windows.Forms.ListView();
-            this.PClista = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ListaAlumno = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ListaCurso = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.EstadoPc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ListaFecha = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.PC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TXTALUMNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CURSOTXT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FECHA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ESTADO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // listaHistrialPc
+            // dataGridView1
             // 
-            this.listaHistrialPc.AllowDrop = true;
-            this.listaHistrialPc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.listaHistrialPc.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.PClista,
-            this.ListaAlumno,
-            this.ListaCurso,
-            this.EstadoPc,
-            this.ListaFecha});
-            this.listaHistrialPc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.listaHistrialPc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listaHistrialPc.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listaHistrialPc.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.listaHistrialPc.GridLines = true;
-            this.listaHistrialPc.HideSelection = false;
-            this.listaHistrialPc.Location = new System.Drawing.Point(0, 0);
-            this.listaHistrialPc.Name = "listaHistrialPc";
-            this.listaHistrialPc.Size = new System.Drawing.Size(581, 342);
-            this.listaHistrialPc.TabIndex = 71;
-            this.listaHistrialPc.UseCompatibleStateImageBehavior = false;
-            this.listaHistrialPc.View = System.Windows.Forms.View.Details;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PC,
+            this.TXTALUMNO,
+            this.CURSOTXT,
+            this.FECHA,
+            this.ESTADO});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(543, 342);
+            this.dataGridView1.TabIndex = 69;
             // 
-            // PClista
+            // PC
             // 
-            this.PClista.Text = "PC";
-            this.PClista.Width = 50;
+            this.PC.HeaderText = "PC";
+            this.PC.Name = "PC";
+            this.PC.ReadOnly = true;
             // 
-            // ListaAlumno
+            // TXTALUMNO
             // 
-            this.ListaAlumno.Text = "Alumno";
-            this.ListaAlumno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ListaAlumno.Width = 130;
+            this.TXTALUMNO.HeaderText = "ALUMNO";
+            this.TXTALUMNO.Name = "TXTALUMNO";
+            this.TXTALUMNO.ReadOnly = true;
             // 
-            // ListaCurso
+            // CURSOTXT
             // 
-            this.ListaCurso.Text = "Curso";
-            this.ListaCurso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ListaCurso.Width = 130;
+            this.CURSOTXT.HeaderText = "CURSO";
+            this.CURSOTXT.Name = "CURSOTXT";
+            this.CURSOTXT.ReadOnly = true;
             // 
-            // EstadoPc
+            // FECHA
             // 
-            this.EstadoPc.Text = "Estado";
-            this.EstadoPc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.EstadoPc.Width = 130;
+            this.FECHA.HeaderText = "FECHA";
+            this.FECHA.Name = "FECHA";
+            this.FECHA.ReadOnly = true;
             // 
-            // ListaFecha
+            // ESTADO
             // 
-            this.ListaFecha.Text = "Fecha";
-            this.ListaFecha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ListaFecha.Width = 130;
+            this.ESTADO.HeaderText = "ESTADO";
+            this.ESTADO.Name = "ESTADO";
+            this.ESTADO.ReadOnly = true;
             // 
             // Historial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(581, 342);
-            this.Controls.Add(this.listaHistrialPc);
+            this.ClientSize = new System.Drawing.Size(543, 342);
+            this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Historial";
             this.Text = "Historial";
             this.Load += new System.EventHandler(this.Historial_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listaHistrialPc;
-        private System.Windows.Forms.ColumnHeader PClista;
-        private System.Windows.Forms.ColumnHeader ListaAlumno;
-        private System.Windows.Forms.ColumnHeader ListaCurso;
-        private System.Windows.Forms.ColumnHeader EstadoPc;
-        private System.Windows.Forms.ColumnHeader ListaFecha;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TXTALUMNO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CURSOTXT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FECHA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ESTADO;
     }
 }

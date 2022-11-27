@@ -38,7 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelFecha = new System.Windows.Forms.Label();
             this.txtCurso = new Proyecto_Final_Programacion_2.TextBox();
-            this.txtAlumo = new Proyecto_Final_Programacion_2.TextBox();
+            this.txtAlumno = new Proyecto_Final_Programacion_2.TextBox();
             this.PanelOps.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -150,6 +150,7 @@
             // 
             this.listapc.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.listapc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.listapc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listapc.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listapc.ForeColor = System.Drawing.SystemColors.Window;
             this.listapc.FormattingEnabled = true;
@@ -214,13 +215,15 @@
             "PC N°58",
             "PC N°59",
             "PC N°60"});
-            this.listapc.Location = new System.Drawing.Point(22, 92);
+            this.listapc.Location = new System.Drawing.Point(22, 94);
             this.listapc.Name = "listapc";
-            this.listapc.Size = new System.Drawing.Size(309, 256);
+            this.listapc.Size = new System.Drawing.Size(302, 236);
             this.listapc.TabIndex = 63;
+            this.listapc.SelectedIndexChanged += new System.EventHandler(this.listapc_SelectedIndexChanged);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
@@ -232,6 +235,7 @@
             // 
             // labelFecha
             // 
+            this.labelFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelFecha.AutoSize = true;
             this.labelFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFecha.ForeColor = System.Drawing.Color.Transparent;
@@ -263,26 +267,27 @@
             this.txtCurso.Texts = "";
             this.txtCurso.UnderlinedStyle = true;
             // 
-            // txtAlumo
+            // txtAlumno
             // 
-            this.txtAlumo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtAlumo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txtAlumo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(50)))), ((int)(((byte)(125)))));
-            this.txtAlumo.BorderSize = 2;
-            this.txtAlumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlumo.ForeColor = System.Drawing.Color.Transparent;
-            this.txtAlumo.Location = new System.Drawing.Point(22, 45);
-            this.txtAlumo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAlumo.Multiline = false;
-            this.txtAlumo.Name = "txtAlumo";
-            this.txtAlumo.Padding = new System.Windows.Forms.Padding(7);
-            this.txtAlumo.PasswordChar = false;
-            this.txtAlumo.PlaceholderColor = System.Drawing.Color.Transparent;
-            this.txtAlumo.PlaceholderText = "Alumno";
-            this.txtAlumo.Size = new System.Drawing.Size(147, 31);
-            this.txtAlumo.TabIndex = 64;
-            this.txtAlumo.Texts = "";
-            this.txtAlumo.UnderlinedStyle = true;
+            this.txtAlumno.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txtAlumno.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(50)))), ((int)(((byte)(125)))));
+            this.txtAlumno.BorderSize = 2;
+            this.txtAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlumno.ForeColor = System.Drawing.Color.Transparent;
+            this.txtAlumno.Location = new System.Drawing.Point(22, 45);
+            this.txtAlumno.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAlumno.Multiline = false;
+            this.txtAlumno.Name = "txtAlumno";
+            this.txtAlumno.Padding = new System.Windows.Forms.Padding(7);
+            this.txtAlumno.PasswordChar = false;
+            this.txtAlumno.PlaceholderColor = System.Drawing.Color.Transparent;
+            this.txtAlumno.PlaceholderText = "Alumno";
+            this.txtAlumno.Size = new System.Drawing.Size(147, 31);
+            this.txtAlumno.TabIndex = 64;
+            this.txtAlumno.Texts = "";
+            this.txtAlumno.UnderlinedStyle = true;
+            this.txtAlumno.TextChanged2 += new System.EventHandler(this.txtAlumno_TextChanged2);
             // 
             // Computadoras
             // 
@@ -293,7 +298,7 @@
             this.Controls.Add(this.labelFecha);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCurso);
-            this.Controls.Add(this.txtAlumo);
+            this.Controls.Add(this.txtAlumno);
             this.Controls.Add(this.listapc);
             this.Controls.Add(this.PanelOps);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -313,10 +318,10 @@
         private ClassBottonFormPrincipal classBottonFormPrincipal2;
         private ClassBottonFormPrincipal Btnusarpc;
         private ClassBottonFormPrincipal classBottonFormPrincipal5;
-        private System.Windows.Forms.CheckedListBox listapc;
-        private TextBox txtAlumo;
-        private TextBox txtCurso;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelFecha;
+        public System.Windows.Forms.CheckedListBox listapc;
+        public TextBox txtAlumno;
+        public TextBox txtCurso;
     }
 }

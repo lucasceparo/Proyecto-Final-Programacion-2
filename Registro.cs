@@ -29,6 +29,7 @@ namespace Proyecto_Final_Programacion_2
         private void Btnlogin_Click(object sender, EventArgs e)
         {
             CuentasRepetidas();
+
         }
 
         public void CuentasRepetidas()
@@ -70,6 +71,10 @@ namespace Proyecto_Final_Programacion_2
             registrar.WriteLine(userReg + "-" + passReg);
             registrar.Close();
             MessageBox.Show("Usuario Registrado");
+
+            this.Hide();
+            Login login = new Login();
+            login.ShowDialog();
         }
 
         private void Btncerrar_Click(object sender, EventArgs e)
