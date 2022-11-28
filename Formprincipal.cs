@@ -188,5 +188,15 @@ namespace Proyecto_Final_Programacion_2
             else
                 WindowState = FormWindowState.Normal;
         }
+
+        private void Panel_de_escritorio_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Barra_de_titulo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

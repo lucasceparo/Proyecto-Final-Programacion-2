@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Color = System.Drawing.Color;
 using System.IO;
+using System.Windows.Media;
 
 namespace Proyecto_Final_Programacion_2
 {
@@ -24,6 +25,7 @@ namespace Proyecto_Final_Programacion_2
             InitializeComponent();
         }
 
+
         private void classBottonFormPrincipal1_Click(object sender, EventArgs e)
         {
 
@@ -31,7 +33,15 @@ namespace Proyecto_Final_Programacion_2
 
         private void classBottonFormPrincipal1_Click_1(object sender, EventArgs e)
         {
+            if (txtAlumno.Texts == "" || txtCurso.Texts =="")
+            {
+                MessageBox.Show("Ingresar Alumno/curso");
+            }
+            
+            else
+            { 
             historial.GrabarDatos(pcsselect,txtAlumno.Texts, txtCurso.Texts, labelFecha.Text);
+            }
         }
 
         private void labelFecha_Click(object sender, EventArgs e)
@@ -53,6 +63,37 @@ namespace Proyecto_Final_Programacion_2
         {
             labelFecha.Text = DateTime.Today.Date.ToString("d");
             historial = new Historial();
+        }
+
+        private void classBottonFormPrincipal4_Click(object sender, EventArgs e)
+        {
+            
+           
+
+            listapc.SetItemCheckState(1,CheckState.Indeterminate);
+        }
+
+        private void classBottonFormPrincipal3_Click(object sender, EventArgs e)
+        {
+
+            File.Delete("historial.txt");
+            StreamWriter historial = new StreamWriter("historial.txt", true);
+            historial.Close();
+        }
+
+        private void txtCurso_TextChanged2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PanelOps_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BTHabilitar_Click(object sender, EventArgs e)
+        {
+     
         }
     }
 }

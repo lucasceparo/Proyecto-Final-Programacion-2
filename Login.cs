@@ -117,5 +117,67 @@ namespace Proyecto_Final_Programacion_2
             else
                 WindowState = FormWindowState.Normal;
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                try
+                {
+                    usuario = txtUsername.Texts;
+                    password = txtPassword.Texts;
+
+                    StreamReader leer;
+                    leer = File.OpenText("usuarios.txt");
+                    string cadena;
+                    string[] arreglo = new string[2];
+                    char[] separador = { '-' };
+                    bool autorizado = false;
+                    cadena = leer.ReadLine();
+                    while (cadena != null && autorizado == false)
+                    {
+                        arreglo = cadena.Split(separador);
+                        if (arreglo[0].Trim().Equals(usuario) && arreglo[1].Trim().Equals(password))
+                        {
+                            if (txtUsername.Texts == "admin" || txtPassword.Texts == "admin")
+                                admin = true;
+                            txtUsername.Clear();
+                            txtPassword.Clear();
+                            autorizado = true;
+
+                            this.Hide();
+                            Formbienvenida bienvenida = new Formbienvenida();
+                            bienvenida.ShowDialog();
+
+                            this.Hide();
+                            Formprincipal principal = new Formprincipal(admin);
+                            principal.ShowDialog();
+                        }
+                        else
+                        {
+                            cadena = leer.ReadLine();
+                        }
+                    }
+                    if (autorizado == false)
+                    {
+                        MessageBox.Show("Usuario y/o contraseña incorrectos");
+                    }
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Erorr: " + error);
+                }
+            }
+        }
     }
 }

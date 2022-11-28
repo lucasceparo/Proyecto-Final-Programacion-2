@@ -29,122 +29,32 @@
         private void InitializeComponent()
         {
             this.PanelOps = new System.Windows.Forms.Panel();
-            this.classBottonFormPrincipal5 = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
-            this.classBottonFormPrincipal4 = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
-            this.classBottonFormPrincipal3 = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
-            this.classBottonFormPrincipal2 = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
-            this.Btnusarpc = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
             this.listapc = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labelFecha = new System.Windows.Forms.Label();
             this.txtCurso = new Proyecto_Final_Programacion_2.TextBox();
             this.txtAlumno = new Proyecto_Final_Programacion_2.TextBox();
+            this.BTHabilitar = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
+            this.BtDeshabilitar = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
+            this.BtEliminar = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
+            this.classBottonFormPrincipal2 = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
+            this.Btnusarpc = new Proyecto_Final_Programacion_2.ClassBottonFormPrincipal();
             this.PanelOps.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelOps
             // 
             this.PanelOps.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PanelOps.Controls.Add(this.classBottonFormPrincipal5);
-            this.PanelOps.Controls.Add(this.classBottonFormPrincipal4);
-            this.PanelOps.Controls.Add(this.classBottonFormPrincipal3);
+            this.PanelOps.Controls.Add(this.BTHabilitar);
+            this.PanelOps.Controls.Add(this.BtDeshabilitar);
+            this.PanelOps.Controls.Add(this.BtEliminar);
             this.PanelOps.Controls.Add(this.classBottonFormPrincipal2);
             this.PanelOps.Controls.Add(this.Btnusarpc);
             this.PanelOps.Location = new System.Drawing.Point(348, 3);
             this.PanelOps.Name = "PanelOps";
             this.PanelOps.Size = new System.Drawing.Size(213, 364);
             this.PanelOps.TabIndex = 1;
-            // 
-            // classBottonFormPrincipal5
-            // 
-            this.classBottonFormPrincipal5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.classBottonFormPrincipal5.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.classBottonFormPrincipal5.BorderColor = System.Drawing.Color.Magenta;
-            this.classBottonFormPrincipal5.BorderRadius = 40;
-            this.classBottonFormPrincipal5.BorderSize = 2;
-            this.classBottonFormPrincipal5.FlatAppearance.BorderSize = 0;
-            this.classBottonFormPrincipal5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.classBottonFormPrincipal5.ForeColor = System.Drawing.Color.White;
-            this.classBottonFormPrincipal5.Location = new System.Drawing.Point(28, 306);
-            this.classBottonFormPrincipal5.Name = "classBottonFormPrincipal5";
-            this.classBottonFormPrincipal5.Size = new System.Drawing.Size(150, 40);
-            this.classBottonFormPrincipal5.TabIndex = 4;
-            this.classBottonFormPrincipal5.Text = "HABILITAR PC";
-            this.classBottonFormPrincipal5.TextColor = System.Drawing.Color.White;
-            this.classBottonFormPrincipal5.UseVisualStyleBackColor = false;
-            // 
-            // classBottonFormPrincipal4
-            // 
-            this.classBottonFormPrincipal4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.classBottonFormPrincipal4.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.classBottonFormPrincipal4.BorderColor = System.Drawing.Color.Magenta;
-            this.classBottonFormPrincipal4.BorderRadius = 40;
-            this.classBottonFormPrincipal4.BorderSize = 2;
-            this.classBottonFormPrincipal4.FlatAppearance.BorderSize = 0;
-            this.classBottonFormPrincipal4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.classBottonFormPrincipal4.ForeColor = System.Drawing.Color.White;
-            this.classBottonFormPrincipal4.Location = new System.Drawing.Point(28, 233);
-            this.classBottonFormPrincipal4.Name = "classBottonFormPrincipal4";
-            this.classBottonFormPrincipal4.Size = new System.Drawing.Size(150, 40);
-            this.classBottonFormPrincipal4.TabIndex = 3;
-            this.classBottonFormPrincipal4.Text = "DESABILITAR PC";
-            this.classBottonFormPrincipal4.TextColor = System.Drawing.Color.White;
-            this.classBottonFormPrincipal4.UseVisualStyleBackColor = false;
-            // 
-            // classBottonFormPrincipal3
-            // 
-            this.classBottonFormPrincipal3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.classBottonFormPrincipal3.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.classBottonFormPrincipal3.BorderColor = System.Drawing.Color.Magenta;
-            this.classBottonFormPrincipal3.BorderRadius = 40;
-            this.classBottonFormPrincipal3.BorderSize = 2;
-            this.classBottonFormPrincipal3.FlatAppearance.BorderSize = 0;
-            this.classBottonFormPrincipal3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.classBottonFormPrincipal3.ForeColor = System.Drawing.Color.White;
-            this.classBottonFormPrincipal3.Location = new System.Drawing.Point(28, 161);
-            this.classBottonFormPrincipal3.Name = "classBottonFormPrincipal3";
-            this.classBottonFormPrincipal3.Size = new System.Drawing.Size(150, 40);
-            this.classBottonFormPrincipal3.TabIndex = 2;
-            this.classBottonFormPrincipal3.Text = "AGREGAR COMENTARIO";
-            this.classBottonFormPrincipal3.TextColor = System.Drawing.Color.White;
-            this.classBottonFormPrincipal3.UseVisualStyleBackColor = false;
-            // 
-            // classBottonFormPrincipal2
-            // 
-            this.classBottonFormPrincipal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.classBottonFormPrincipal2.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.classBottonFormPrincipal2.BorderColor = System.Drawing.Color.Magenta;
-            this.classBottonFormPrincipal2.BorderRadius = 40;
-            this.classBottonFormPrincipal2.BorderSize = 2;
-            this.classBottonFormPrincipal2.FlatAppearance.BorderSize = 0;
-            this.classBottonFormPrincipal2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.classBottonFormPrincipal2.ForeColor = System.Drawing.Color.White;
-            this.classBottonFormPrincipal2.Location = new System.Drawing.Point(28, 90);
-            this.classBottonFormPrincipal2.Name = "classBottonFormPrincipal2";
-            this.classBottonFormPrincipal2.Size = new System.Drawing.Size(150, 40);
-            this.classBottonFormPrincipal2.TabIndex = 1;
-            this.classBottonFormPrincipal2.Text = "ENTREGAR PC";
-            this.classBottonFormPrincipal2.TextColor = System.Drawing.Color.White;
-            this.classBottonFormPrincipal2.UseVisualStyleBackColor = false;
-            // 
-            // Btnusarpc
-            // 
-            this.Btnusarpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.Btnusarpc.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.Btnusarpc.BorderColor = System.Drawing.Color.Magenta;
-            this.Btnusarpc.BorderRadius = 40;
-            this.Btnusarpc.BorderSize = 2;
-            this.Btnusarpc.FlatAppearance.BorderSize = 0;
-            this.Btnusarpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btnusarpc.ForeColor = System.Drawing.Color.White;
-            this.Btnusarpc.Location = new System.Drawing.Point(28, 18);
-            this.Btnusarpc.Name = "Btnusarpc";
-            this.Btnusarpc.Size = new System.Drawing.Size(150, 40);
-            this.Btnusarpc.TabIndex = 0;
-            this.Btnusarpc.Text = "USAR PC";
-            this.Btnusarpc.TextColor = System.Drawing.Color.White;
-            this.Btnusarpc.UseVisualStyleBackColor = false;
-            this.Btnusarpc.Click += new System.EventHandler(this.classBottonFormPrincipal1_Click_1);
+            this.PanelOps.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelOps_Paint);
             // 
             // listapc
             // 
@@ -266,6 +176,7 @@
             this.txtCurso.TabIndex = 65;
             this.txtCurso.Texts = "";
             this.txtCurso.UnderlinedStyle = true;
+            this.txtCurso.TextChanged2 += new System.EventHandler(this.txtCurso_TextChanged2);
             // 
             // txtAlumno
             // 
@@ -288,6 +199,100 @@
             this.txtAlumno.Texts = "";
             this.txtAlumno.UnderlinedStyle = true;
             this.txtAlumno.TextChanged2 += new System.EventHandler(this.txtAlumno_TextChanged2);
+            // 
+            // BTHabilitar
+            // 
+            this.BTHabilitar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BTHabilitar.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BTHabilitar.BorderColor = System.Drawing.Color.Magenta;
+            this.BTHabilitar.BorderRadius = 40;
+            this.BTHabilitar.BorderSize = 2;
+            this.BTHabilitar.FlatAppearance.BorderSize = 0;
+            this.BTHabilitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTHabilitar.ForeColor = System.Drawing.Color.White;
+            this.BTHabilitar.Location = new System.Drawing.Point(28, 235);
+            this.BTHabilitar.Name = "BTHabilitar";
+            this.BTHabilitar.Size = new System.Drawing.Size(150, 40);
+            this.BTHabilitar.TabIndex = 4;
+            this.BTHabilitar.Text = "HABILITAR PC";
+            this.BTHabilitar.TextColor = System.Drawing.Color.White;
+            this.BTHabilitar.UseVisualStyleBackColor = false;
+            this.BTHabilitar.Click += new System.EventHandler(this.BTHabilitar_Click);
+            // 
+            // BtDeshabilitar
+            // 
+            this.BtDeshabilitar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BtDeshabilitar.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BtDeshabilitar.BorderColor = System.Drawing.Color.Magenta;
+            this.BtDeshabilitar.BorderRadius = 40;
+            this.BtDeshabilitar.BorderSize = 2;
+            this.BtDeshabilitar.FlatAppearance.BorderSize = 0;
+            this.BtDeshabilitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtDeshabilitar.ForeColor = System.Drawing.Color.White;
+            this.BtDeshabilitar.Location = new System.Drawing.Point(28, 161);
+            this.BtDeshabilitar.Name = "BtDeshabilitar";
+            this.BtDeshabilitar.Size = new System.Drawing.Size(150, 40);
+            this.BtDeshabilitar.TabIndex = 3;
+            this.BtDeshabilitar.Text = "DESHABILITAR PC";
+            this.BtDeshabilitar.TextColor = System.Drawing.Color.White;
+            this.BtDeshabilitar.UseVisualStyleBackColor = false;
+            this.BtDeshabilitar.Click += new System.EventHandler(this.classBottonFormPrincipal4_Click);
+            // 
+            // BtEliminar
+            // 
+            this.BtEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BtEliminar.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BtEliminar.BorderColor = System.Drawing.Color.Magenta;
+            this.BtEliminar.BorderRadius = 40;
+            this.BtEliminar.BorderSize = 2;
+            this.BtEliminar.FlatAppearance.BorderSize = 0;
+            this.BtEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtEliminar.ForeColor = System.Drawing.Color.White;
+            this.BtEliminar.Location = new System.Drawing.Point(28, 301);
+            this.BtEliminar.Name = "BtEliminar";
+            this.BtEliminar.Size = new System.Drawing.Size(150, 40);
+            this.BtEliminar.TabIndex = 2;
+            this.BtEliminar.Text = "ELIMINAR HISTORIAL";
+            this.BtEliminar.TextColor = System.Drawing.Color.White;
+            this.BtEliminar.UseVisualStyleBackColor = false;
+            this.BtEliminar.Click += new System.EventHandler(this.classBottonFormPrincipal3_Click);
+            // 
+            // classBottonFormPrincipal2
+            // 
+            this.classBottonFormPrincipal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.classBottonFormPrincipal2.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.classBottonFormPrincipal2.BorderColor = System.Drawing.Color.Magenta;
+            this.classBottonFormPrincipal2.BorderRadius = 40;
+            this.classBottonFormPrincipal2.BorderSize = 2;
+            this.classBottonFormPrincipal2.FlatAppearance.BorderSize = 0;
+            this.classBottonFormPrincipal2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.classBottonFormPrincipal2.ForeColor = System.Drawing.Color.White;
+            this.classBottonFormPrincipal2.Location = new System.Drawing.Point(28, 90);
+            this.classBottonFormPrincipal2.Name = "classBottonFormPrincipal2";
+            this.classBottonFormPrincipal2.Size = new System.Drawing.Size(150, 40);
+            this.classBottonFormPrincipal2.TabIndex = 1;
+            this.classBottonFormPrincipal2.Text = "ENTREGAR PC";
+            this.classBottonFormPrincipal2.TextColor = System.Drawing.Color.White;
+            this.classBottonFormPrincipal2.UseVisualStyleBackColor = false;
+            // 
+            // Btnusarpc
+            // 
+            this.Btnusarpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.Btnusarpc.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.Btnusarpc.BorderColor = System.Drawing.Color.Magenta;
+            this.Btnusarpc.BorderRadius = 40;
+            this.Btnusarpc.BorderSize = 2;
+            this.Btnusarpc.FlatAppearance.BorderSize = 0;
+            this.Btnusarpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btnusarpc.ForeColor = System.Drawing.Color.White;
+            this.Btnusarpc.Location = new System.Drawing.Point(28, 18);
+            this.Btnusarpc.Name = "Btnusarpc";
+            this.Btnusarpc.Size = new System.Drawing.Size(150, 40);
+            this.Btnusarpc.TabIndex = 0;
+            this.Btnusarpc.Text = "USAR PC";
+            this.Btnusarpc.TextColor = System.Drawing.Color.White;
+            this.Btnusarpc.UseVisualStyleBackColor = false;
+            this.Btnusarpc.Click += new System.EventHandler(this.classBottonFormPrincipal1_Click_1);
             // 
             // Computadoras
             // 
@@ -313,11 +318,11 @@
 
         #endregion
         private System.Windows.Forms.Panel PanelOps;
-        private ClassBottonFormPrincipal classBottonFormPrincipal4;
-        private ClassBottonFormPrincipal classBottonFormPrincipal3;
+        private ClassBottonFormPrincipal BtDeshabilitar;
+        private ClassBottonFormPrincipal BtEliminar;
         private ClassBottonFormPrincipal classBottonFormPrincipal2;
         private ClassBottonFormPrincipal Btnusarpc;
-        private ClassBottonFormPrincipal classBottonFormPrincipal5;
+        private ClassBottonFormPrincipal BTHabilitar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelFecha;
         public System.Windows.Forms.CheckedListBox listapc;

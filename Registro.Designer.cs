@@ -134,7 +134,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(190, 40);
             this.button1.TabIndex = 20;
-            this.button1.Text = "CANCELAR";
+            this.button1.Text = "VOLVER";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

@@ -13,7 +13,7 @@ namespace Proyecto_Final_Programacion_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Formprincipal(true));
+            Application.Run(new Login());
         }
     }
 }

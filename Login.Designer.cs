@@ -175,6 +175,8 @@
             this.txtPassword.TabIndex = 7;
             this.txtPassword.Texts = "";
             this.txtPassword.UnderlinedStyle = true;
+            this.txtPassword.TextChanged2 += new System.EventHandler(this.txtPassword_TextChanged2);
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
             // 
             // txtUsername
             // 
@@ -219,6 +221,7 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "q";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btncerrar)).EndInit();

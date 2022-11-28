@@ -43,13 +43,25 @@ namespace Proyecto_Final_Programacion_2.forms
 
         public void GrabarDatos(string listaPc, string alumno, string curso, string fecha)
         {
+           
             StreamWriter archivo = new StreamWriter("historial.txt", true);  //abrimos el archivo y agregamos los datos
             archivo.WriteLine(listaPc);
             archivo.WriteLine(alumno);
             archivo.WriteLine(curso);
             archivo.WriteLine(fecha);
+           
             
             archivo.Close();           
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
